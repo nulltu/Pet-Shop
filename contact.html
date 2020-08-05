@@ -13,6 +13,7 @@
   <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="icon" href="./assets/icons/contact.png">
 </head>
 
 <body>
@@ -94,7 +95,7 @@
       </div>
       </div>
       <div class="button-enviar">  
-         <button class="btn btn-dark" type="submit">Enviar Consulta</button>
+         <button class="btn btn-dark" onclick="red()" type="submit">Enviar Consulta</button>
       </div>
     </form>
   </div>
@@ -102,26 +103,7 @@
     <p>©2020 Todos los derechos reservados - FRANCO SHOP PET </p>
 </footer>
 
-  <script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (function () {
-      'use strict';
-      window.addEventListener('load', function () {
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.getElementsByClassName('needs-validation');
-        // Loop over them and prevent submission
-        var validation = Array.prototype.filter.call(forms, function (form) {
-          form.addEventListener('submit', function (event) {
-            if (form.checkValidity() === false) {
-              event.preventDefault();
-              event.stopPropagation();
-            }
-            form.classList.add('was-validated');
-          }, false);
-        });
-      }, false);
-    })();
-  </script>
+<script src="/js/events.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>

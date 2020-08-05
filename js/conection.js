@@ -20,6 +20,14 @@ function myProgram(dataApi) {
     var arrayToy = dataApi.filter(articulo => articulo.tipo == 'Juguete')
     //console.log(arrayToy)
 
+    $(document).ready(function () {
+        $(".content").hide()
+        $(".show_hide").on("click", function () {
+          var txt = $(".content").is(':visible') ? 'Mostrar Descripcion' : 'Ocultar Descripcion'
+          $(".show_hide").text(txt)
+          $(this).next('.content').slideToggle(200)
+        });
+      });
 
     if (document.querySelector('#infoPharma')) {
 
@@ -31,21 +39,43 @@ function myProgram(dataApi) {
                 lastUnits = "Últimas Unidades!!!"
                 document.querySelector('#infoPharma').innerHTML += `
     <div class="col mb-4">
-    <div class="card w-60" id="image-product">
+    <div class="card w-55" id="image-product">
     <img src="${value.imagen}" class="card-img-top" alt="...">
     <div class="lastUnits">${lastUnits}</div>
     <h3 class="card-title">$${value.precio}.00</h3>
     </div>
-    </div>`
+    </div>
+
+    <div>
+    <a href="#" class="show_hide card-link" data-content="toggle-text">
+    Mostrar Descripcion
+    </a>
+    <div class="description content card w-55 card-body">
+    <p>${value.descripcion}</p>
+    </div>
+    </div>
+
+
+
+   `
 
             } else {
                 lastUnits = 'En Stock'
                 document.querySelector('#infoPharma').innerHTML += `
     <div class="col mb-4">
-    <div class="card w-60" id="image-product">
+    <div class="card w-55" id="image-product">
     <img src="${value.imagen}" class="card-img-top" alt="...">
     <div class="available-stock">${lastUnits}</div>
     <h3 class="card-title">$${value.precio}.00</h3>
+    </div>
+    </div>
+    
+       <div>
+    <a href="#" class="show_hide card-link" data-content="toggle-text">
+    Mostrar Descripcion
+    </a>
+    <div class="description content card w-55 card-body">
+    <p>${value.descripcion}</p>
     </div>
     </div>`
 
@@ -70,6 +100,7 @@ function myProgram(dataApi) {
         <div class="lastUnits">${lastUnits}</div>
         <h3 class="card-title">$${value.precio}.00</h3>
         </div>
+        <div>${value.descripcion}</div>
         </div>`
     
                 } else {
@@ -81,6 +112,7 @@ function myProgram(dataApi) {
         <div class="available-stock">${lastUnits}</div>
         <h3 class="card-title">$${value.precio}.00</h3>
         </div>
+        <div>${value.descripcion}</div>
         </div>`
     
                 }

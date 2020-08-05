@@ -140,7 +140,9 @@ h2{
 
 .container-form{
     
-    color: whitesmoke;
+    color: #ffffff;
+    margin-top: 1em;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .container-form p{
@@ -165,7 +167,7 @@ iframe{
  
     color: yellow;
     padding: 1em;
-    background-color: rgb(196, 25, 20);
+    background-color: #c41914;
 }
 
 .available-stock{
@@ -184,7 +186,6 @@ h3,h5{
 }
 
 .invalid-feedback{
-    color: whitesmoke!important;
     font-style: italic;
 }
 .button-enviar{
@@ -203,4 +204,18 @@ h3,h5{
 .container-title{
     padding: 2em;
  
+}
+
+.textArea{
+    resize: none;
+}
+
+.show_hide{
+    font-size: small;
+}
+
+.description{
+    color: whitesmoke;
+    padding: 0.2em;
+    background-color: rgba(255, 255, 255, 0.1)!important;
 }
