@@ -12,7 +12,7 @@ $.ajax({
 /*---------------------------------------------------------------PHARMACY-----------------------------------------------------------*/
 
 function myProgram(dataApi) {
-    console.log(dataApi)
+    //console.log(dataApi)
 
     //Filtro la info de la API por categoria.
     var arrayPharma = dataApi.filter(articulo => articulo.tipo == 'Medicamento')
@@ -23,7 +23,7 @@ function myProgram(dataApi) {
 
     if (document.querySelector('#infoPharma')) {
 
-        var infoPharma = document.querySelector('#infoPharma')
+       
         for (let value of arrayPharma) {
             var lastUnits = ''
             if (value.stock < 5) {
@@ -55,8 +55,37 @@ function myProgram(dataApi) {
 
     /*---------------------------------------------------------------Toys-----------------------------------------------------------*/
 
-
-
+    
+        if (document.querySelector('#infoToys')) {
+    
+            for (let value of arrayToy) {
+                var lastUnits = ''
+                if (value.stock < 5) {
+    
+                    lastUnits = "Últimas Unidades!!!"
+                    document.querySelector('#infoToys').innerHTML += `
+        <div class="col mb-4">
+        <div class="card w-60" id="image-product">
+        <img src="${value.imagen}" class="card-img-top" alt="...">
+        <div class="lastUnits">${lastUnits}</div>
+        <h3 class="card-title">$${value.precio}.00</h3>
+        </div>
+        </div>`
+    
+                } else {
+                    lastUnits = 'En Stock'
+                    document.querySelector('#infoToys').innerHTML += `
+        <div class="col mb-4">
+        <div class="card w-60" id="image-product">
+        <img src="${value.imagen}" class="card-img-top" alt="...">
+        <div class="available-stock">${lastUnits}</div>
+        <h3 class="card-title">$${value.precio}.00</h3>
+        </div>
+        </div>`
+    
+                }
+            }
+        }
 
 
 
