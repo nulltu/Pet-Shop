@@ -16,3 +16,9 @@
     }, false);
   })();
   
+
+  window.onload=function(alerta){
+    Swal.fire(
+    'Tu consulta fue enviada con éxito',
+  )
+  }
