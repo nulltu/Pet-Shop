@@ -1,6 +1,6 @@
 body{
     font-family: 'Recursive', sans-serif;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, #ee7752, #9c1f4f, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradient 40s ease infinite;
 }
@@ -247,7 +247,7 @@ iframe{
 }
 
 .fotos-perros img{
-    width: 20em;
+    width: 15em;
     text-align: center;
 }
 
@@ -268,6 +268,7 @@ iframe{
 
 .title-producto{
     color: whitesmoke;
+    padding: 0.5em;
     font-size: 1.5em;
     font-family: 'Recursive', sans-serif;
 }

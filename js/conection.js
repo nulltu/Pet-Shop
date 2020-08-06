@@ -38,27 +38,31 @@ function myProgram(dataApi) {
 
               lastUnits = "Últimas Unidades!!!"
               document.querySelector('#infoPharma').innerHTML += `
+
               <div class="col-md-auto fotos-perros">
               <div class="tarjeta-producto">
-              <img src="${value.imagen}" alt="">
-              <p class="precio">$${value.precio}.00</p>
               <p class="title-producto">${value.nombre}</p>
-              <div class="lastUnits">Ultimas Unidades</div>
-              <p class="description">${value.descripcion}</p>
+              <img src="${value.imagen}" alt="">
+              <p class="precio">$${value.precio}.00</p> 
+              <div class="lastUnits">Últimas Unidades</div>
+                <p class="description">${value.descripcion}</p>
               </div>
-            </div>`
+              </div>
+              </div>`
           
           }
           else{
 
               lastUnits = "En Stock"
               document.querySelector('#infoPharma').innerHTML += `
+
               <div class="col-md-auto fotos-perros">
               <div class="tarjeta-producto">
-              <img src="${value.imagen}" alt="">
-              <p class="precio">$${value.precio}.00</p>
               <p class="title-producto">${value.nombre}</p>
+              <img src="${value.imagen}" alt="">
+              <p class="precio">$${value.precio}.00</p> 
               <p class="description">${value.descripcion}</p>
+              </div>
               </div>
             </div>`
             }
@@ -76,27 +80,31 @@ function myProgram(dataApi) {
     
                     lastUnits = "Últimas Unidades!!!"
                     document.querySelector('#infoToys').innerHTML += `
+                    
                     <div class="col-md-auto fotos-perros">
                     <div class="tarjeta-producto">
-                    <img src="${value.imagen}" alt="">
-                    <p class="precio">$${value.precio}.00</p>
                     <p class="title-producto">${value.nombre}</p>
-                    <div class="lastUnits">Ultimas Unidades</div>
-                    <p class="description">${value.descripcion}</p>
+                    <img src="${value.imagen}" alt="">
+                    <p class="precio">$${value.precio}.00</p> 
+                    <div class="lastUnits">Últimas Unidades</div>
+                      <p class="description">${value.descripcion}</p>
                     </div>
-                  </div>`
+                    </div>
+                    </div>`
                 
                 }
                 else{
 
                     lastUnits = "En Stock"
                     document.querySelector('#infoToys').innerHTML += `
+
                     <div class="col-md-auto fotos-perros">
                     <div class="tarjeta-producto">
-                    <img src="${value.imagen}" alt="">
-                    <p class="precio">$${value.precio}.00</p>
                     <p class="title-producto">${value.nombre}</p>
-                    <p class="description">${value.descripcion}</p>
+                    <img src="${value.imagen}" alt="">
+                    <p class="precio">$${value.precio}.00</p> 
+                      <p class="description">${value.descripcion}</p>
+                    </div>
                     </div>
                   </div>`
 
