@@ -168,7 +168,13 @@ iframe{
 .invalid-feedback{
     font-style: italic;
     font-family: 'Recursive', sans-serif;
+    color: whitesmoke!important;
 }
+
+.valid-feedback{color: whitesmoke!important;
+
+}
+
 .button-enviar{
     text-align: center;
 }
@@ -197,7 +203,7 @@ iframe{
 
 .description{
     font-size: smaller;
-    padding: 0.2em;
+    padding: 2em;
     background-color: rgba(209, 198, 198, 0.1)!important;
     font-family: 'Recursive', sans-serif;
 }
