@@ -31,9 +31,10 @@ function myProgram(dataApi) {
 
     if (document.querySelector('#infoPharma')) {
 
-       
+       //Render DOM 
+
         for (let value of arrayPharma) {
-            var lastUnits = ''
+            var lastUnits = '' 
             if (value.stock < 5) {
 
               lastUnits = "Últimas Unidades!!!"
@@ -61,6 +62,7 @@ function myProgram(dataApi) {
               <p class="title-producto">${value.nombre}</p>
               <img src="${value.imagen}" alt="">
               <p class="precio">$${value.precio}.00</p> 
+              <div>En stock</div>
               <p class="description">${value.descripcion}</p>
               </div>
               </div>
@@ -103,7 +105,8 @@ function myProgram(dataApi) {
                     <p class="title-producto">${value.nombre}</p>
                     <img src="${value.imagen}" alt="">
                     <p class="precio">$${value.precio}.00</p> 
-                      <p class="description">${value.descripcion}</p>
+                    <div>En Stock</div>
+                    <p class="description">${value.descripcion}</p>
                     </div>
                     </div>
                   </div>`

@@ -19,7 +19,8 @@ body{
 
 .logo-primary{
     width: 10em;
-    margin-top: 1.5em;
+    margin-top: 1.2em;
+    margin-bottom: 0.6em;
 }
 
 .header-flex{
@@ -37,14 +38,6 @@ body{
     color: white;
     display: flex;
 }
-
-ion-icon {
-    font-size: 2em;
-  }
-
-  ion-icon {
-    color: rgb(240, 240, 245);
-  }
 
 .ubication-text{
     font-weight: bold;
@@ -74,11 +67,6 @@ a{
     color:#7A4FB1!important;
 }
 
-.container-carousel{
-    padding-right: 2em;
-
-
-}
 
 h1{
     text-align: center;
@@ -92,14 +80,6 @@ h2{
     font-family: 'Recursive', sans-serif;
 }
 
-.box-texto{
-    font-size: calc(0.6em + 0.6vw);
-    color: whitesmoke;
-    padding:1.5em;
-    margin-left: 1.5em;
-    font-family: 'Recursive', sans-serif;
-}
-
 .info-index{
     padding: 0em 5em;
     font-family: 'Recursive', sans-serif;
@@ -108,14 +88,11 @@ h2{
 
 footer{
     text-align: center;
-    padding: 1em;
+    margin-top: 2em;
+    padding: 2em 2em 2em 2em;
     font-family: 'Recursive', sans-serif;
     color: whitesmoke ;
     background-color: rgba(121, 78, 177, 0.2);
-}
-
-.carousel{
-margin: 1.5em;
 }
 
 .ubication-maps{
@@ -124,6 +101,9 @@ margin: 1.5em;
    
 }
 
+.container-carousel{
+    margin-top: 3.2em;
+}
 .text-carousel{
     font-size: calc(1em + 1vw)!important;
     font-family: 'Recursive', sans-serif;
@@ -131,13 +111,6 @@ margin: 1.5em;
 
 img{
     border-radius: 5px;
-}
-
-.info-maps{
-    color: whitesmoke;
-    font-size: calc(2em + 2vw);
-    font-weight: bolder;
-    text-align: center;
 }
 
 h2{
@@ -170,14 +143,13 @@ h2{
     font-family: 'Recursive', sans-serif;
 }
 
-
 iframe{
     border-radius: 5px;
 }
 
 .lastUnits{
- 
     color: yellow;
+    text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
     margin: 0em 2em;
     padding: 0.0em 0em;
     background-color: #c41914;
@@ -187,18 +159,11 @@ iframe{
     font-family: 'Recursive', sans-serif;
 }
 
-.available-stock{
-    background-color: white;
-    padding: 1em;
-}
-
 .title-pharma{
     padding: 2em;
     font-size:calc(1.2em + 1.2vw); 
     font-family: 'Recursive', sans-serif;
-  
 }
-
 
 .invalid-feedback{
     font-style: italic;
@@ -219,7 +184,6 @@ iframe{
 
 .container-title{
     padding: 2em;
- 
 }
 
 .textArea{
@@ -237,6 +201,7 @@ iframe{
     background-color: rgba(209, 198, 198, 0.1)!important;
     font-family: 'Recursive', sans-serif;
 }
+
 
 .menu-volver{
     text-align: center;
@@ -260,6 +225,9 @@ iframe{
     width: 20em;
     margin-left: 3em;
     border-radius: 5px;
+    -webkit-box-shadow: -19px 13px 38px -3px rgba(0,0,0,0.47);
+    -moz-box-shadow: -19px 13px 38px -3px rgba(0,0,0,0.47);
+    box-shadow: -19px 13px 38px -3px rgba(0,0,0,0.47);
 }
 
 .contenido{
@@ -274,9 +242,11 @@ iframe{
 }
 
 .precio{
-    color: rgb(82, 80, 80)!important;
+    padding: 1em 0em 0em 0em;
+    color: rgb(253, 253, 252)!important;
     font-size: 1.5em;
     font-family: 'Recursive', sans-serif;
+    text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
 }
 
 .dropdown-menu{
